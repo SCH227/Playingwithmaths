@@ -22,7 +22,7 @@ step = (yc-yp)/n
 Y = [yp+(i*step) for i in range(n+1)]
 
 
-def u(y0):
+def u(y0):  # primitive found at https://www.integral-calculator.com/
     return k*((sc.gammaincc(shape-1, yp-y0)*gamma_shape_1)-gammainc_yp)
 
 
