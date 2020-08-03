@@ -44,4 +44,4 @@ def fy(y):
 if __name__ == "__main__":
     fy_array = list(map(fy, Y))
     ps = integrate.simps(fy_array, dx=step)
-    print(ps)
+    print("ps = ", ps)
